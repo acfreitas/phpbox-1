@@ -29,10 +29,6 @@ include_recipe 'php::module_curl'
 
 # Postgres
 node.set['postgresql'] = {
-  version: '9.3',
-  contrib: {
-    packages: 'postgresql-contrib-9.3'
-  },
   password: {
     postgres: ''
   },
